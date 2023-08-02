@@ -1,0 +1,138 @@
+{
+  "Import React": {
+    "prefix": "imr",
+    "body": ["import * as React from 'react';\n"],
+    "description": "Import React"
+  },
+
+  "Import ReactDOM": {
+    "prefix": "imrd",
+    "body": ["import ReactDOM from 'react-dom';"],
+    "description": "Import ReactDOM"
+  },
+
+  "Import React, { useState }": {
+    "prefix": "imrs",
+    "body": [
+      "import * as React from 'react';",
+      "import { useState } from 'react';\n"
+    ],
+    "description": "Import React, { useState }"
+  },
+
+  "Import React, { useState, useEffect }": {
+    "prefix": "imrse",
+    "body": [
+      "import * as React from 'react';",
+      "import { useState, useEffect } from 'react';\n"
+    ],
+    "description": "Import React, { useState, useEffect }"
+  },
+
+  "Function Component": {
+    "prefix": "fc",
+    "body": [
+      "interface $1Props {",
+      "\t$2",
+      "}",
+      " ",
+      "const $1: FunctionComponent<$1Props> = ($3) => {",
+      "\treturn ( $0 );",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Function Component"
+  },
+
+  "Function Syntax Component": {
+    "prefix": "ffc",
+    "body": [
+      "function $1($2) {",
+      "\treturn ( $0 );",
+      "}",
+      "",
+      "export default $1;"
+    ],
+    "description": "Function Syntax Component"
+  },
+
+  "Stateless Function Component": {
+    "prefix": "sfc",
+    "body": [
+      "const $1 = ($2) => {",
+      "\treturn ( $0 );",
+      "}",
+      " ",
+      "export default $1;"
+    ],
+    "description": "Stateless Function Component"
+  },
+
+  "reactClassComponent": {
+    "prefix": "rcc",
+    "body": "import React, { Component } from 'react';\n\nclass ${1:${TM_FILENAME_BASE}} extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t);\n\t}\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a React component class with ES6 module system"
+  },
+
+  "reactStateless": {
+    "prefix": "rsc",
+    "body": "import React from 'react';\n\nconst ${1:${TM_FILENAME_BASE}} = () => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t);\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a stateless React component without PropTypes and ES6 module system"
+  },
+
+  "reactHookProps": {
+    "prefix": "rhc",
+    "body": "import React,{ useState } from 'react';\nimport PropTypes from 'prop-types';\n\nconst ${1:${TM_FILENAME_BASE}} = props => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n};\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a stateless React component with PropTypes and ES6 module system"
+  },
+
+  "flowStatelessComponent": {
+    "prefix": "fsc",
+    "body": "// @flow \nimport * as React from 'react';\ntype Props = {\n\t$0\n};\nexport const ${1:${TM_FILENAME_BASE}} = (props: Props) => {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n};",
+    "description": "Creates a stateless React component with FlowTypes and ES6 module system"
+  },
+
+  "flowStatelessFunction": {
+    "prefix": "fsf",
+    "body": [
+      "// @flow",
+      "import * as React from 'react';",
+      "type Props = {",
+      "  $0",
+      "};",
+      "export function ${1:${TM_FILENAME_BASE}}(props: Props) {",
+      "  return (",
+      "    <div>",
+      "      ",
+      "    </div>",
+      "  );",
+      "};"
+    ],
+    "description": "Creates a stateless React component as a named function with FlowTypes"
+  },
+
+  "reactStatelessFunction": {
+    "prefix": "rsf",
+    "body": "import React from 'react';\n\nfunction ${1:${TM_FILENAME_BASE}}(props) {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a stateless React component as a named function without PropTypes"
+  },
+
+  "reactStatelessFunctionProps": {
+    "prefix": "rsfp",
+    "body": "import React from 'react';\nimport PropTypes from 'prop-types';\n\n${1:${TM_FILENAME_BASE}}.propTypes = {\n\t$0\n};\n\nfunction ${1:${TM_FILENAME_BASE}}(props) {\n\treturn (\n\t\t<div>\n\t\t\t\n\t\t</div>\n\t);\n}\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a stateless React component as a named function with PropTypes"
+  },
+
+  "reactStatelessImplicitReturn": {
+    "prefix": "rsi",
+    "body": "import React from 'react';\n\nconst ${1:${TM_FILENAME_BASE}} = (props) => (\n\t\t\t$0\n\t);\n\nexport default ${1:${TM_FILENAME_BASE}};",
+    "description": "Creates a stateless React component without PropTypes and ES6 module system but with Implicit Return and props"
+  },
+  
+  "useEffect": {
+    "prefix": "usf",
+    "body": "useEffect(() => {\n$0\n})",
+    "description": "Adds use effect"
+  }
+}

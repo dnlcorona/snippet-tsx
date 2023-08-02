@@ -4,17 +4,22 @@
   "description": "Code snippets for Reactjs you will actually use",
   "version": "0.0.1",
   "publisher": "dnlcorona",
-  "icon": "images/logo.png",
   "galleryBanner": {
     "theme": "light"
   },
   "license": "SEE LICENSE IN LICENSE.md",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dnlcorona/"
+    "url": "https://github.com/dnlcorona/snippet-tsx"
   },
+  "keywords": [
+    "snippets",
+    "react",
+    "tsx",
+    "typescript"
+  ],
   "engines": {
-    "vscode": "0.10.x"
+    "vscode": "^1.35.0"
   },
   "categories": [
     "Snippets"
@@ -23,6 +28,10 @@
     "snippets": [
       {
         "language": "typescript",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "typescriptreact",
         "path": "./snippets/snippets.code-snippets"
       }
     ]

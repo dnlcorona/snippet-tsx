@@ -2,7 +2,7 @@
   "name": "snippet-tsx",
   "displayName": "SnippetTSX",
   "description": "Code snippets for Reactjs you will actually use",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "dnlcorona",
   "galleryBanner": {
     "theme": "light"

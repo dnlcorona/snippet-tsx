@@ -37,19 +37,19 @@
 
   "reactRegularFunctionComponent": {
     "prefix": "rrf",
-    "body": "export interface $1Props {\n\t$2\n}\t\texport function $1(props:  $1Props) {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default $1",
+    "body": "export interface $1Props {\n\t$2\n}\n\nexport function $1(props:  $1Props) {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default $1",
     "description": "Regular Function Component"
   },
 
   "reactArrowFunctionComponent": {
     "prefix": "raf",
-    "body": "export interface $1Props {\n\t$2\n}\t\tconst $1 = (props): $1Props => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default $1",
+    "body": "export interface $1Props {\n\t$2\n}\n\nconst $1 = (props): $1Props => {\n\treturn (\n\t\t<div>\n\t\t\t$0\n\t\t</div>\n\t)\n}\n\nexport default $1",
     "description": "Arrow Function Component"
   },
 
   "reactClassComponent": {
     "prefix": "rcc",
-    "body": "import React, { Component } from 'react'\n\nclass $1 extends Component {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nexport default $1",
+    "body": "class $1 {\n\trender() {\n\t\treturn (\n\t\t\t<div>\n\t\t\t\t$0\n\t\t\t</div>\n\t\t)\n\t}\n}\n\nexport default $1",
     "description": "Class Component"
   },
 
